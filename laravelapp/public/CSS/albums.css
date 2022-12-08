@@ -1,0 +1,149 @@
+/* animals page  */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    width: 100%;
+    background-image: url("../Img/animals.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color:white;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.navbar ul span{
+    color: white;
+    height: 3px;
+}
+
+.content{
+    width: 90%;
+    position: relative;
+    transform: translateY(-50%);
+    color: white;
+    margin-left: 60px;
+    margin-top: 150px;
+}
+
+.animals{
+    padding: 0 80px;
+}
+
+/* Search bar */
+
+.search {
+    width: 300px;
+    position: relative;
+    display: flex;
+    float: right;
+    margin-right: 135px;
+    margin-top: -20px;
+}
+
+.searchTerm {
+    width: 100%;
+    border: 3px solid #282F2800;
+    border-right: none;
+    padding: 5px;
+    height: 36px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #121213;
+}
+
+.searchTerm:focus{
+    color: black;
+}
+
+.searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #C000;;
+    background: #776868;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.album{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+}
+
+.album1{
+    background-image: url("../Img/mammals.jpg");
+}
+.album2{
+    background-image: url("../Img/mammals.jpg");
+}
+.album3{
+    background-image: url("../Img/mammals.jpg");
+}
+.album4{
+    background-image: url("../Img/mammals.jpg");
+}
+.album5{
+    background-image: url("../Img/mammals.jpg");
+}
+.album6{
+    background-image: url("../Img/mammals.jpg");
+}
+.album7{
+    background-image: url("../Img/mammals.jpg");
+}
+
+.create button{
+    font-size: 30px;
+    padding: 20px;
+    text-align: center;
+    background-color: #e6c855;
+    border-radius: 10px;
+    margin-left: 720px;
+    cursor: pointer;
+}

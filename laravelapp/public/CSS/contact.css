@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.banner{
+    width: 100%;
+    height: 100%;
+    background-image: url("../Img/animals.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color:white;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.navbar ul span{
+    color: white;
+    height: 3px;
+}
+
+.contact-section{
+    padding: 40px 0;
+}
+
+.contact-section h1{
+    text-align: center;
+    color: white;
+}
+
+.contact-info{
+    color: #fff;
+    max-width: 500px;
+    line-height: 50px;
+    padding: 0 200px;
+    margin-top: 60px;
+    font-size: 20px;
+    float: left;
+    background: rgba(23, 28, 30, 0.6);
+    padding: 25px;
+    margin-left: 200px;
+    border-radius: 30px;
+}
+
+.contact-info i{
+    margin-right: 20px;
+    font-size: 25px;
+}
+
+.contact-form{
+    max-width: 700px;
+    float: right;
+    padding: 0 100px;
+    margin-top: 40px;
+}
+
+/* .contact-info, .contact-form{
+    flex: 1;
+} */
+
+input.contact-form-text
+{
+    background-color: rgb(255, 251, 251);
+    color: rgb(13, 12, 12);
+    border: none;
+    width: 400px;
+    padding: 12px;
+    font-size: 15px;
+    resize: vertical;
+    border-radius: 15px;
+    box-shadow: 0 1px 1px rgba(241, 234, 234, 0.1);
+    margin-bottom: 5px;
+    opacity: 0.7;
+    height: 40px;
+}
+
+textarea.contact-form-text{
+    background-color: rgb(255, 251, 251);
+    color: rgb(13, 12, 12);
+    border: none;
+    width: 400px;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 15px;
+    box-shadow: 0 1px 1px rgba(241, 234, 234, 0.1);
+    margin-bottom: 40px;
+    opacity: 0.7;
+    margin-right: -100px;
+}
+
+.contact-form-text:focus{
+    box-shadow: 0 0 10px 4px #34495e;
+}
+
+textarea.contact-form-text{
+    resize: none;
+    height: 120px;
+}
+
+.contact-form-btn{
+    border: 0;
+    background: #34495e;
+    color:#fff;
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.contact-form-btn:hover{
+    background: #2980b9;
+}

@@ -1,0 +1,189 @@
+/* animals page  */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-image: url("../Img/animals.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color:white;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.navbar ul span{
+    color: white;
+    height: 3px;
+}
+
+h1{
+    font-size: 30px;
+    padding: 0 50px;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.content{
+    width: 90%;
+    position: relative;
+    transform: translateY(-50%);
+    color: white;
+    margin-left: 60px;
+    margin-top: 25px;
+} 
+
+.title{
+    color: white;
+    width: 90%;
+    padding: 0 40px;
+    margin-top: 10px;
+}
+
+.comments{
+    margin-top: 25px;
+    float: right;
+    padding: 0 30px;
+}
+
+.comments-info{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+}
+
+.comments-box{
+    width: 500px;
+    background: rgba(15, 14, 14, 0.37);
+    padding: 25px;
+    margin: 15px;
+    cursor: pointer;
+    height: 120px;
+    display: flex;
+    border-radius: 20px;
+}
+
+.comments-box img{
+    width: 90px;
+    height: 90px;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+.name{
+    display: flex;
+    flex-direction: column;
+    color: wheat;
+    margin-top: -10px;
+}
+.name p{
+    margin-top: 1px;
+    font-size: 12px;
+}
+.name h4{
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+/* .testimonials p{
+    font-size: 0.9rem;
+    color:white;
+} */
+
+/* .comments-box p{
+    float: right;
+    margin-left: 20px;
+    color: wheat;
+    font-size: 15px;
+} */
+
+.comments-section{
+    margin-top: 25px;
+}
+
+.package1{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+.package1 img{
+    margin-right: 20px;
+    border-radius: 20px;
+    width: 70px;
+}
+.package1 h2{
+    color: wheat;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.package2 textarea{
+    background-color: rgb(255, 251, 251);
+    color: rgb(13, 12, 12);
+    border: none;
+    width: 400px;
+    padding: 12px;
+    font-size: 15px;
+    resize: vertical;
+    border-radius: 15px;
+    box-shadow: 0 1px 1px rgba(241, 234, 234, 0.1);
+    margin-bottom: 5px;
+    opacity: 0.7;
+    height: 150px;
+}
+
+.package3 input{
+    background: #362e94;
+    color: white;
+    border: none;
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.3s;
+    transition-property: all;
+    transition-property: background;
+    cursor: pointer;
+    border-radius: 20px;
+}

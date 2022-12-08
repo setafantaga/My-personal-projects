@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../Img/animals.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color:white;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.navbar ul span{
+    color: white;
+    height: 3px;
+}
+
+.add{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    background: rgba(56, 61, 62, 0.53);
+    padding: 25px;
+    border-radius: 30px;
+}
+
+.add p{
+    font-size: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px 0;
+    color: white;
+}
+
+.add-text{
+    font-size: 20px;
+    margin: 10px 5;
+    color: #151515;
+    padding: 5px;
+    border-radius: 5px;
+    resize: none;
+    width: 300px;
+}
+.add-slug{
+    font-size: 20px;
+    margin: 10px 5;
+    color: #151515;
+    padding: 5px;
+    border-radius: 5px;
+    resize: none;
+    width: 300px;
+}
+
+.add-excerpt{
+    resize: none;
+    height: 200px;
+    width: 350px;
+    border-radius: 5px;
+    text-align:START;
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+.add-body{
+    resize: none;
+    height: 200px;
+    width: 350px;
+    border-radius: 5px;
+    text-align:START;
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+.contact-form-btn{
+    float: right;
+    border: 0;
+    background: #34495e;
+    color:#fff;
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.add-text:focus{
+    box-shadow: 0 0 10px 4px #34495e;
+}
+
